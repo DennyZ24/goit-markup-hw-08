@@ -1,0 +1,27 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--specialization {
+  padding-top: 0;
+}
+
+.section--team {
+  background-color: #f5f4fa;
+}
+
+.section--clients {
+  padding-bottom: 103px;
+}
+
+.section__title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  color: var(--second-color);
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
