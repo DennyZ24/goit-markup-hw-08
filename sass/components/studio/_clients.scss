@@ -1,32 +1,32 @@
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0px;
-  padding: 0px;
-}
+// .clients-list {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   margin: 0px;
+//   padding: 0px;
+// }
 
-.clients__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
+// .clients__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 170px;
+//   height: 90px;
 
-  transition: color var(--duration) var(--cube),
-    border-color var(--duration) var(--cube);
+//   transition: color var(--duration) var(--cube),
+//     border-color var(--duration) var(--cube);
 
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
-  color: #afb1b8;
+//   border-radius: 4px;
+//   border: 1px solid #afb1b8;
+//   color: #afb1b8;
 
-  &:hover,
-  &:focus {
-    color: var(--brand-color);
-    border-color: var(--brand-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: var(--brand-color);
+//     border-color: var(--brand-color);
+//   }
+// }
 
-.clients__icon {
-  fill: currentColor;
-}
+// .clients__icon {
+//   fill: currentColor;
+// }

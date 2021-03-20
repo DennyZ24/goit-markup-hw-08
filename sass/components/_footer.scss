@@ -1,126 +1,126 @@
-.footer {
-  background-color: var(--bg-color-foot);
-  padding: 60px 0px;
-}
+// .footer {
+//   background-color: var(--bg-color-foot);
+//   padding: 60px 0px;
+// }
 
-.address__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 2;
-  color: #ffffff;
-  margin-top: 0px;
-  margin-bottom: 9px;
-}
+// .address__text {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: 14px;
+//   line-height: 2;
+//   color: #ffffff;
+//   margin-top: 0px;
+//   margin-bottom: 9px;
+// }
 
-.address__list {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding: 0px;
-}
+// .address__list {
+//   margin-top: 0px;
+//   margin-bottom: 0px;
+//   padding: 0px;
+// }
 
-.address__item:first-child {
-  margin-bottom: 9px;
-}
+// .address__item:first-child {
+//   margin-bottom: 9px;
+// }
 
-.address__link {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 2;
-  color: rgba(255, 255, 255, 0.6);
-}
+// .address__link {
+//   font-weight: 400;
+//   font-style: normal;
+//   font-size: 14px;
+//   line-height: 2;
+//   color: rgba(255, 255, 255, 0.6);
+// }
 
-.join {
-  margin-left: 70px;
-}
+// .join {
+//   margin-left: 70px;
+// }
 
-.join__title {
-  display: inline-block;
+// .join__title {
+//   display: inline-block;
 
-  margin: 0px;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+//   margin: 0px;
+//   margin-bottom: 20px;
+//   text-transform: uppercase;
 
-  color: #fff;
-  font-size: 14px;
-  line-height: 1.14;
-}
+//   color: #fff;
+//   font-size: 14px;
+//   line-height: 1.14;
+// }
 
-.join__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 206px;
-  margin: 0px;
-  padding: 0px;
-}
+// .join__list {
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+//   width: 206px;
+//   margin: 0px;
+//   padding: 0px;
+// }
 
-.join__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 44px;
-  height: 44px;
+// .join__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 44px;
+//   height: 44px;
 
-  transition: background-color var(--duration) var(--cube);
+//   transition: background-color var(--duration) var(--cube);
 
-  border-radius: 50%;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.1);
+//   border-radius: 50%;
+//   color: #fff;
+//   background-color: rgba(255, 255, 255, 0.1);
 
-  &:hover,
-  &:focus {
-    background-color: var(--brand-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     background-color: var(--brand-color);
+//   }
+// }
 
-.join__icon {
-  fill: currentColor;
-}
+// .join__icon {
+//   fill: currentColor;
+// }
 
-/* FORM MAILING */
-.sign-form {
-  margin-left: 93px;
-}
+// /* FORM MAILING */
+// .sign-form {
+//   margin-left: 93px;
+// }
 
-.sign-form__title {
-  display: inline-block;
+// .sign-form__title {
+//   display: inline-block;
 
-  margin: 0;
-  margin-bottom: 20px;
-  text-transform: uppercase;
+//   margin: 0;
+//   margin-bottom: 20px;
+//   text-transform: uppercase;
 
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.14;
+//   font-size: 14px;
+//   font-weight: 700;
+//   line-height: 1.14;
 
-  color: #fff;
-}
+//   color: #fff;
+// }
 
-.sign-form__label {
-  display: block;
-}
+// .sign-form__label {
+//   display: block;
+// }
 
-.sign-form__input {
-  padding: 15px;
-  width: 358px;
-  height: 50px;
+// .sign-form__input {
+//   padding: 15px;
+//   width: 358px;
+//   height: 50px;
 
-  color: #fff;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 4px;
-  background-color: var(--bg-color-foot);
+//   color: #fff;
+//   border: 1px solid rgba(255, 255, 255, 0.3);
+//   border-radius: 4px;
+//   background-color: var(--bg-color-foot);
 
-  &::placeholder {
-    font-size: 16px;
-    line-height: 1.25;
+//   &::placeholder {
+//     font-size: 16px;
+//     line-height: 1.25;
 
-    color: rgba(255, 255, 255, 0.6);
-  }
-}
+//     color: rgba(255, 255, 255, 0.6);
+//   }
+// }
 
-.sign-form__icon {
-  margin-left: 10px;
-  fill: #fff;
-}
+// .sign-form__icon {
+//   margin-left: 10px;
+//   fill: #fff;
+// }
