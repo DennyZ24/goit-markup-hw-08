@@ -1,27 +1,39 @@
-// .section {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-// .section--specialization {
-//   padding-top: 0;
-// }
+  @media (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
-// .section--team {
-//   background-color: #f5f4fa;
-// }
+.section--specialization {
+  display: none;
+  @media (min-width: 1200px) {
+    display: block;
+    padding-top: 0;
+  }
+}
 
-// .section--clients {
-//   padding-bottom: 103px;
-// }
+.section--team {
+  background-color: #f5f4fa;
+}
 
-// .section__title {
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.2;
-//   text-align: center;
-//   color: var(--second-color);
-//   margin-top: 0px;
-//   margin-bottom: 50px;
-// }
+.section__title {
+  margin-top: 0px;
+  margin-bottom: var(--card-gap);
+
+  text-align: center;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.179;
+
+  color: var(--second-color);
+
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
+  }
+}

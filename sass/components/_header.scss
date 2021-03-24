@@ -1,4 +1,8 @@
 .header {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
   border-bottom: 1px solid #ececec;
   letter-spacing: 0.02em;
 }
@@ -38,14 +42,17 @@
   line-height: 1.2;
 
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   transition: color var(--duration) var(--cube);
 
   &:hover,
   &:focus {
     color: var(--brand-color);
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 

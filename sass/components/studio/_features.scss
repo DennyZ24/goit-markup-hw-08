@@ -1,46 +1,68 @@
-// .feature-list {
-//   display: flex;
-//   flex-wrap: wrap;
-//   width: 1200px;
+.feature-list {
+  margin: 0;
+  padding: 0;
 
-//   padding: 0px;
-//   margin-top: 0px;
-//   margin-bottom: 0px;
-//   margin-right: calc(-1 * var(--card-gap));
-// }
+  @media (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: calc(-1 * var(--card-gap));
 
-// .feature-list__item {
-//   flex-basis: calc(100% / 4 - var(--card-gap));
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      margin-bottom: calc(-1 * var(--card-gap));
+    }
+  }
+}
 
-//   margin-right: var(--card-gap);
-// }
+.feature-list__item {
+  @media (min-width: 768px) {
+    flex-basis: calc(100% / 2 - var(--card-gap));
+    margin-right: var(--card-gap);
+  }
 
-// .feature-list__iconbox {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 270px;
-//   height: 120px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: var(--card-gap);
+  }
 
-//   background-color: #f5f4fa;
-//   border-radius: 4px;
-//   margin-bottom: 30px;
-// }
+  @media (min-width: 1200px) {
+    flex-basis: calc(100% / 4 - var(--card-gap));
+  }
+}
 
-// .feature-list__title {
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 14px;
-//   line-height: 1.1;
-//   text-transform: uppercase;
-//   color: var(--second-color);
-//   margin-top: 0px;
-//   margin-bottom: 10px;
-// }
+.feature-list__iconbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-// .feature-list__text {
-//   font-size: 14px;
-//   line-height: 2;
-//   margin-bottom: 0px;
-//   margin-top: 0px;
-// }
+  margin-bottom: var(--card-gap);
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.feature-list__title {
+  margin: 0;
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+  color: var(--second-color);
+
+  @media (max-width: 767px) {
+    text-align: center;
+  }
+}
+
+.feature-list__text {
+  margin: 0;
+
+  font-size: 14px;
+  line-height: 1.72;
+
+  @media (max-width: 767px) {
+    margin-bottom: var(--card-gap);
+  }
+}

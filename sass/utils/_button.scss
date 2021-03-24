@@ -44,8 +44,12 @@
 }
 
 .sign-form__button {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
+
+  @media (min-width: 1200px) {
+    display: inline-flex;
+    margin-left: 12px;
+  }
 }
