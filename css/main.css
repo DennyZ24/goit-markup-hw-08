@@ -29,6 +29,8 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .visually-hidden {
@@ -857,6 +859,8 @@ img {
 .spec-list__thumb {
   position: relative;
   overflow: hidden;
+  width: 370px;
+  height: 294px;
 }
 
 .spec-list__box {
