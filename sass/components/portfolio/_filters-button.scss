@@ -1,23 +1,39 @@
 .filters-list {
   display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
 
   margin: 0px;
-  margin-bottom: 50px;
   padding: 0px;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 
-.filters-list__item:not(:nth-child(5)) {
+.filters-list__item:not(:last-child) {
   margin-right: 8px;
 }
 
+.filters-list__item:first-child {
+  @media (max-width: 767px) {
+    margin-bottom: 15px;
+  }
+}
+
 .filters-list__button {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.625;
 
   padding-top: 6px;
   padding-bottom: 6px;

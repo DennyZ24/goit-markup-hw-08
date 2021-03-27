@@ -1,7 +1,24 @@
 .hero {
+  // max-width: 1600px;
+  // height: 600px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 118px;
   padding-bottom: 118px;
-  background-color: var(--bg-hero-color);
+
+  @media (min-width: 320px) {
+    max-width: 480px;
+    height: 400px;
+  }
+
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../images/desktop/bgimage.jpg');
 
   background-repeat: no-repeat;
   background-position: center;
@@ -11,19 +28,14 @@
     padding-top: 200px;
     padding-bottom: 200px;
   }
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/desktop/bgimage@2x.jpg);
+  }
 }
-// .hero {
-//   max-width: 1600px;
-//   height: 600px;
 
-//   background-image: linear-gradient(
-//       to right,
-//       rgba(47, 48, 58, 0.4),
-//       rgba(47, 48, 58, 0.4)
-//     ),
-//     url('../images/bghero.jpg');
-
-// }
 .hero__title {
   text-align: center;
   text-transform: uppercase;
