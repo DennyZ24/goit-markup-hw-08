@@ -1,6 +1,5 @@
 .hero {
-  // max-width: 1600px;
-  // height: 600px;
+  height: 400px;
 
   margin-left: auto;
   margin-right: auto;
@@ -8,31 +7,80 @@
   padding-top: 118px;
   padding-bottom: 118px;
 
-  @media (min-width: 320px) {
-    max-width: 480px;
-    height: 400px;
-  }
-
-  background-image: linear-gradient(
-      to right,
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url('../images/desktop/bgimage.jpg');
-
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  @media (min-width: 320px) {
+    max-width: 480px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/mobile/bgimage.jpg');
+    background-size: 480px 400px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/mobile/bgimage@2x.jpg);
+    }
+  }
+
+  @media (min-width: 768px) {
+    max-width: 768px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/tablet/bgimage.jpg');
+    background-size: 768px 400px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/tablet/bgimage@2x.jpg);
+    }
+  }
   @media (min-width: 1200px) {
     padding-top: 200px;
     padding-bottom: 200px;
-  }
 
-  @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(../images/desktop/bgimage@2x.jpg);
+    max-width: 1600px;
+    height: 600px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url('../images/desktop/bgimage.jpg');
+    background-size: 1600px 600px;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/desktop/bgimage@2x.jpg);
+    }
   }
 }
 
