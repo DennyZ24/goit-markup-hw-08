@@ -55,14 +55,7 @@
 
 .text-wrapper {
   padding-top: 30px;
-  padding-right: 122px;
   padding-bottom: 24px;
-  padding-left: 122px;
-
-  @media (min-width: 768px) {
-    padding-right: 74px;
-    padding-left: 74px;
-  }
 
   @media (min-width: 1200px) {
     padding-top: 30px;
