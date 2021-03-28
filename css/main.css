@@ -319,7 +319,6 @@ img {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding-top: 48px;
-  padding-right: 55px;
   padding-bottom: 48px;
   padding-left: 40px;
   background-color: #fff;
@@ -352,6 +351,7 @@ img {
   width: 40px;
   height: 40px;
   padding: 0;
+  margin: 0;
   border: none;
   background-color: #fff;
 }
@@ -453,6 +453,12 @@ img {
 .header {
   border-bottom: 1px solid #ececec;
   letter-spacing: 0.02em;
+}
+
+@media (max-width: 767px) {
+  .header {
+    position: relative;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1216,10 +1222,10 @@ img {
   padding: 0px;
 }
 
-@media (max-width: 1199px) {
+@media (max-width: 1200px) {
   .clients__list {
-    margin-right: calc(-1 * var(--card-gap));
-    margin-bottom: calc(-1 * var(--card-gap));
+    margin-left: -30px;
+    margin-top: -30px;
   }
 }
 
@@ -1236,10 +1242,15 @@ img {
 
 @media (max-width: 1199px) {
   .clients__item {
+    margin-left: var(--card-gap);
+    margin-top: var(--card-gap);
+  }
+}
+
+@media (max-width: 767px) {
+  .clients__item {
     -ms-flex-preferred-size: calc(100% / 2 - var(--card-gap));
         flex-basis: calc(100% / 2 - var(--card-gap));
-    margin-right: var(--card-gap);
-    margin-bottom: var(--card-gap);
   }
 }
 

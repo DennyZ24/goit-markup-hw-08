@@ -1,6 +1,10 @@
 .header {
   border-bottom: 1px solid #ececec;
   letter-spacing: 0.02em;
+
+  @media (max-width: 767px) {
+    position: relative;
+  }
 }
 
 .site-nav {
