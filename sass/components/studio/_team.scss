@@ -43,13 +43,13 @@
   max-height: 460px;
 
   @media (min-width: 768px) {
-    max-width: 354px;
-    max-height: 374px;
+    width: 354px;
+    height: 374px;
   }
 
   @media (min-width: 1200px) {
-    max-width: 270px;
-    max-height: 260px;
+    width: 270px;
+    height: 260px;
   }
 }
 

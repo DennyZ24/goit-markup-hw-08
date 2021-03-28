@@ -25,12 +25,10 @@
 }
 
 .menu-toggle {
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 10px;
-  right: 15px;
+
   width: 40px;
   height: 40px;
   padding: 0;
@@ -43,6 +41,12 @@
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+.menu-toggle--close {
+  top: 10px;
+  right: 15px;
+  position: absolute;
 }
 
 .menu-toggle__icon {

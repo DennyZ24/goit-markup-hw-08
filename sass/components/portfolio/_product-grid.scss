@@ -5,21 +5,23 @@
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
-    margin-right: calc(-1 * var(--card-gap));
-    margin-bottom: calc(-1 * var(--card-gap));
+    margin-right: -30px;
+    margin-bottom: -30px;
   }
 }
 
 .grid__item {
-  margin-bottom: 30px;
-
   transition: box-shadow var(--duration) var(--cube);
 
-  border: 1px solid #eeeeee;
+  outline: 1px solid #eeeeee;
 
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  @media (max-width: 767px) {
+    margin-bottom: 30px;
   }
 
   @media (min-width: 768px) {
@@ -36,6 +38,21 @@
 .image-thumb {
   position: relative;
   overflow: hidden;
+
+  @media (max-width: 767px) {
+    max-width: 450px;
+    max-height: 294px;
+  }
+
+  @media (min-width: 768px) {
+    width: 354px;
+    height: 294px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 370px;
+    height: 294px;
+  }
 }
 
 .image-thumb__backdrop {
