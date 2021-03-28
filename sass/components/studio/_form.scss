@@ -1,6 +1,10 @@
-// .form {
-//   width: 448px;
-// }
+.form {
+  width: 370px;
+
+  @media (min-width: 1200px) {
+    width: 448px;
+  }
+}
 
 .form__title {
   margin: 0px;

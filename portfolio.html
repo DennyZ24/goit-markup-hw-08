@@ -54,6 +54,12 @@
                     </a>
                 </li>
             </ul>
+
+            <button type="button" class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="menu-toggle__icon" width="24" height="16">
+                    <use href="./images/icons.svg#icon-menu-open"></use>
+                </svg>
+            </button>
         </div>
     </header>
     <main>
@@ -74,7 +80,10 @@
                 <ul class="grid">
                     <li class="grid__item">
                         <div class="image-thumb">
-                            <img src="./images/techno.jpg" alt="Технокряк">
+                            <img 
+                            srcset="./images/techno.jpg 1x, ./images/techno@2x.jpg 2x"
+                            src="./images/techno.jpg" 
+                            alt="Технокряк">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса. 
                                     Компании используют эту платформу для цифрового
@@ -90,7 +99,10 @@
 
                     <li class="grid__item">
                         <div class="image-thumb">
-                            <img src="./images/basket.jpg" alt="Постер" width="370" height="294">
+                            <img 
+                            srcset="./images/basket.jpg 1x, ./images/basket@2x.jpg 2x"
+                            src="./images/basket.jpg" 
+                            alt="Постер">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -106,7 +118,10 @@
 
                     <li class="grid__item">
                         <div class="image-thumb">
-                            <img src="./images/seafood.jpg" alt="Постер ресторана" width="370" height="294">
+                            <img 
+                            srcset="./images/seafood.jpg 1x, ./images/seafood@2x.jpg 2x"
+                            src="./images/seafood.jpg" 
+                            alt="Постер ресторана">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -122,7 +137,10 @@
 
                     <li class="grid__item">
                        <div class="image-thumb">
-                            <img src="./images/headphones.jpg" alt="Наушники" width="370" height="294">
+                            <img 
+                            srcset="./images/headphones.jpg 1x, ./images/headphones@2x.jpg 2x"
+                            src="./images/headphones.jpg" 
+                            alt="Наушники">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -138,7 +156,10 @@
 
                     <li class="grid__item">
                         <div class="image-thumb">
-                            <img src="./images/boxes.jpg" alt="Две коробки" width="370" height="294">
+                            <img 
+                            srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                            src="./images/boxes.jpg" 
+                            alt="Две коробки">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -154,7 +175,10 @@
 
                     <li class="grid__item">
                         <div class="image-thumb">
-                            <img src="./images/computer.jpg" alt="Компютер" width="370" height="294">
+                            <img 
+                            srcset="./images/computer.jpg 1x, ./images/computer@2x.jpg 2x"
+                            src="./images/computer.jpg" 
+                            alt="Компютер">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -170,7 +194,10 @@
 
                     <li class="grid__item">
                         <div class="image-thumb">
-                            <img src="./images/book.jpg" alt="Книга" width="370" height="294">
+                            <img 
+                            srcset="./images/book.jpg 1x, ./images/book@2x.jpg 2x"
+                            src="./images/book.jpg" 
+                            alt="Книга">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -186,7 +213,10 @@
                     
                     <li class="grid__item">
                         <div class="image-thumb">
-                            <img src="./images/project-lab.jpg" alt="Бирка проекта Лаб" width="370" height="294">
+                            <img 
+                            srcset="./images/project-lab.jpg 1x, ./images/project-lab@2x.jpg 2x"
+                            src="./images/project-lab.jpg" 
+                            alt="Бирка проекта Лаб">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -202,7 +232,10 @@
 
                     <li class="grid__item">
                         <div class="image-thumb">
-                            <img src="./images/laptop.jpg" alt="Ноутбук" width="370" height="294">
+                            <img 
+                            srcset="./images/laptop.jpg 1x, ./images/laptop@2x.jpg 2x"
+                            src="./images/laptop.jpg" 
+                            alt="Ноутбук">
                             <div class="image-thumb__backdrop">
                                 <p class="image-thumb__description">Технокряк это современная площадка распространения коронавируса.
                                     Компании используют эту платформу для цифрового
@@ -289,6 +322,60 @@
             </div>
         </div>
     </footer>
+
+        <div class="menu-container js-menu-container" id="mobile-menu">
+            <button class="menu-toggle js-close-menu" type="button">
+                <svg class="menu-toggle__icon" width="18.67" height="18.67">
+                    <use href="./images/icons.svg#icon-menu-close"></use>
+                </svg>
+            </button>
+        
+            <ul class="menu-nav">
+                <li class="menu-nav__item">
+                    <a href="./index.html" class="menu-nav__link">Студия</a>
+                </li>
+        
+                <li class="menu-nav__item">
+                    <a href="./portfolio.html" class="menu-nav__link menu-nav__link--activ">Портфолио</a>
+                </li>
+        
+                <li class="menu-nav__item">
+                    <a href="" class="menu-nav__link">Контакты</a>
+                </li>
+            </ul>
+        
+            <ul class="menu-contacts">
+                <li class="menu-contacts__item">
+                    <a class="menu-contacts__link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
+                </li>
+        
+                <li class="menu-contacts__item">
+                    <a class="menu-contacts__link-mail " href="mailto:info@devstudio.com">info@devstudio.com</a>
+                </li>
+            </ul>
+        
+            <ul class="menu-social">
+                <li class="menu-social__item">
+                    <a href="" class="menu-social__link">Instagram</a>
+                </li>
+        
+                <li class="menu-social__item">
+                    <a href="" class="menu-social__link">Twitter</a>
+                </li>
+        
+                <li class="menu-social__item">
+                    <a href="" class="menu-social__link">Facebook</a>
+                </li>
+        
+                <li class="menu-social__item">
+                    <a href="" class="menu-social__link">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+        <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"></script>
+        <script defer src="js/mobile-menu.js"></script>
     </body>
     
     </html>

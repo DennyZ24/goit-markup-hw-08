@@ -4,8 +4,6 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
   padding: 40px;
-  min-width: 450px;
-  min-height: 609px;
 
   opacity: 1;
   transition: transform var(--duration) var(--cube),
@@ -16,9 +14,12 @@
   border-radius: 4px;
   background-color: #fff;
 
+  @media (max-width: 1199px) {
+    max-width: 450px;
+  }
+
   @media (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
+    max-width: 528px;
   }
 }
 
